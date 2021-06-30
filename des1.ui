@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>555</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>signal viewer</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>pictures/google-wave-icon.png</normaloff>pictures/google-wave-icon.png</iconset>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>480</width>
+     <height>320</height>
+    </size>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="MplWid1" name="MplWid1" native="true">
+      <widget class="QPushButton" name="play">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>0</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>play</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="stop">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>0</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>pause</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="MplWid2" name="MplWid2" native="true">
+      <widget class="QPushButton" name="play2">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>0</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>play</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="stop2">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>0</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>pause</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="MplWid3" name="MplWid3" native="true">
+      <widget class="QPushButton" name="play3">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>0</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>play</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="stop3">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>0</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>pause</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="MplWid4" name="MplWid4" native="true">
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>0</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>play</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>0</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>pause</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="MplWid5" name="MplWid5" native="true">
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>0</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>play</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>0</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>pause</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>500</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menufile">
+    <property name="title">
+     <string>file</string>
+    </property>
+    <addaction name="actionexit"/>
+   </widget>
+   <widget class="QMenu" name="menuedit">
+    <property name="title">
+     <string>edit</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuchannel_1">
+    <property name="title">
+     <string>channel 1</string>
+    </property>
+    <addaction name="actionopen"/>
+    <addaction name="actionopen_file_1"/>
+    <addaction name="actionclose"/>
+   </widget>
+   <widget class="QMenu" name="menuchannel_2">
+    <property name="title">
+     <string>channel 2</string>
+    </property>
+    <addaction name="actionopen_2"/>
+    <addaction name="actionopen_file_2"/>
+    <addaction name="actionclose_2"/>
+   </widget>
+   <widget class="QMenu" name="menuchannel_3">
+    <property name="title">
+     <string>channel 3</string>
+    </property>
+    <addaction name="actionopen_3"/>
+    <addaction name="actionopen_file_3"/>
+    <addaction name="actionclose_3"/>
+   </widget>
+   <widget class="QMenu" name="menuchannel_4">
+    <property name="title">
+     <string>channel 4</string>
+    </property>
+    <addaction name="actionopen_4"/>
+    <addaction name="actionopen_file_44"/>
+    <addaction name="actionclose_4"/>
+   </widget>
+   <widget class="QMenu" name="menuchannel_5">
+    <property name="title">
+     <string>channel 5</string>
+    </property>
+    <addaction name="actionopen_5"/>
+    <addaction name="actionopen_file_5"/>
+    <addaction name="actionclose_5"/>
+   </widget>
+   <addaction name="menufile"/>
+   <addaction name="menuedit"/>
+   <addaction name="menuchannel_1"/>
+   <addaction name="menuchannel_2"/>
+   <addaction name="menuchannel_3"/>
+   <addaction name="menuchannel_4"/>
+   <addaction name="menuchannel_5"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionexit">
+   <property name="icon">
+    <iconset>
+     <normaloff>pictures/Button-Close-icon.png</normaloff>pictures/Button-Close-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>exit</string>
+   </property>
+  </action>
+  <action name="actionopen">
+   <property name="text">
+    <string>open</string>
+   </property>
+  </action>
+  <action name="actionopen_file_csv">
+   <property name="text">
+    <string>open file_csv</string>
+   </property>
+  </action>
+  <action name="actionload_data">
+   <property name="text">
+    <string>load data</string>
+   </property>
+  </action>
+  <action name="actionclose">
+   <property name="text">
+    <string>close</string>
+   </property>
+  </action>
+  <action name="actionopen_2">
+   <property name="text">
+    <string>open</string>
+   </property>
+  </action>
+  <action name="actionopen_file_xls_2">
+   <property name="text">
+    <string>open file_xls</string>
+   </property>
+  </action>
+  <action name="actionclose_2">
+   <property name="text">
+    <string>close</string>
+   </property>
+  </action>
+  <action name="actionload_data_2">
+   <property name="text">
+    <string>load data</string>
+   </property>
+  </action>
+  <action name="actionopen_3">
+   <property name="text">
+    <string>open</string>
+   </property>
+  </action>
+  <action name="actionopen_file_txt">
+   <property name="text">
+    <string>open file_txt</string>
+   </property>
+  </action>
+  <action name="actionload_data_3">
+   <property name="text">
+    <string>load data</string>
+   </property>
+  </action>
+  <action name="actionclose_3">
+   <property name="text">
+    <string>close</string>
+   </property>
+  </action>
+  <action name="actionopen_4">
+   <property name="text">
+    <string>open</string>
+   </property>
+  </action>
+  <action name="actionopen_file">
+   <property name="text">
+    <string>open file</string>
+   </property>
+  </action>
+  <action name="actionload_data_4">
+   <property name="text">
+    <string>load data</string>
+   </property>
+  </action>
+  <action name="actionclose_4">
+   <property name="text">
+    <string>close</string>
+   </property>
+  </action>
+  <action name="actionopen_5">
+   <property name="text">
+    <string>open</string>
+   </property>
+  </action>
+  <action name="actionopen_file_4">
+   <property name="text">
+    <string>open file</string>
+   </property>
+  </action>
+  <action name="actionload_data_5">
+   <property name="text">
+    <string>load data</string>
+   </property>
+  </action>
+  <action name="actionclose_5">
+   <property name="text">
+    <string>close</string>
+   </property>
+  </action>
+  <action name="actionplay">
+   <property name="text">
+    <string>play</string>
+   </property>
+  </action>
+  <action name="actionopen_file_txt_2">
+   <property name="text">
+    <string>open file_txt</string>
+   </property>
+  </action>
+  <action name="actionopen_file_xls">
+   <property name="text">
+    <string>open file_xls</string>
+   </property>
+  </action>
+  <action name="actionopen_file_txt_3">
+   <property name="text">
+    <string>open file_txt</string>
+   </property>
+  </action>
+  <action name="actionopen_file_csv_2">
+   <property name="text">
+    <string>open file_csv</string>
+   </property>
+  </action>
+  <action name="actionopen_file_csv_3">
+   <property name="text">
+    <string>open file_csv</string>
+   </property>
+  </action>
+  <action name="actionopen_file_xls_3">
+   <property name="text">
+    <string>open file_xls</string>
+   </property>
+  </action>
+  <action name="actionopen_file_1">
+   <property name="text">
+    <string>open file</string>
+   </property>
+  </action>
+  <action name="actionopen_file_2">
+   <property name="text">
+    <string>open file</string>
+   </property>
+  </action>
+  <action name="actionopen_file_3">
+   <property name="text">
+    <string>open file</string>
+   </property>
+  </action>
+  <action name="actionopen_file_44">
+   <property name="text">
+    <string>open file</string>
+   </property>
+  </action>
+  <action name="actionopen_file_5">
+   <property name="text">
+    <string>open file</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MplWid3</class>
+   <extends>QWidget</extends>
+   <header>mplwid3.h</header>
+   <container>1</container>
+   <slots>
+    <slot>openn()</slot>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>MplWid1</class>
+   <extends>QWidget</extends>
+   <header>mplwid1.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MplWid2</class>
+   <extends>QWidget</extends>
+   <header>mplwid2.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MplWid4</class>
+   <extends>QWidget</extends>
+   <header>mplwid4.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MplWid5</class>
+   <extends>QWidget</extends>
+   <header>mplwid5.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionclose</sender>
+   <signal>triggered()</signal>
+   <receiver>MplWid1</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>110</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionopen</sender>
+   <signal>triggered()</signal>
+   <receiver>MplWid1</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>110</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionopen_2</sender>
+   <signal>triggered()</signal>
+   <receiver>MplWid2</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionclose_2</sender>
+   <signal>triggered()</signal>
+   <receiver>MplWid2</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionexit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionopen_3</sender>
+   <signal>triggered()</signal>
+   <receiver>MplWid3</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>445</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionclose_3</sender>
+   <signal>triggered()</signal>
+   <receiver>MplWid3</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>445</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionopen_4</sender>
+   <signal>triggered()</signal>
+   <receiver>MplWid4</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>378</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionopen_5</sender>
+   <signal>triggered()</signal>
+   <receiver>MplWid5</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>478</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionclose_4</sender>
+   <signal>triggered()</signal>
+   <receiver>MplWid4</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>378</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionclose_5</sender>
+   <signal>triggered()</signal>
+   <receiver>MplWid5</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>478</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>play</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>play1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>446</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>stop</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>stop()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>366</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>play3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>play3()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>446</x>
+     <y>242</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>stop3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>stop3()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>366</x>
+     <y>242</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>play2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>play2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>446</x>
+     <y>141</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>stop2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>stop2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>366</x>
+     <y>141</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionopen_file_1</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>openFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionopen_file_2</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>open2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionopen_file_3</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>openn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionopen_file_44</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>open4()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionopen_file_5</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>open5()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>play4()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>446</x>
+     <y>342</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>stop4()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>366</x>
+     <y>342</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>play5()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>446</x>
+     <y>443</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>stop5()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>366</x>
+     <y>443</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>openFile()</slot>
+  <slot>plott()</slot>
+  <slot>open2()</slot>
+  <slot>plot2()</slot>
+  <slot>plot3()</slot>
+  <slot>openn()</slot>
+  <slot>play1()</slot>
+  <slot>update_plot_data1()</slot>
+  <slot>stop()</slot>
+  <slot>play2()</slot>
+  <slot>stop2()</slot>
+  <slot>play3()</slot>
+  <slot>stop3()</slot>
+  <slot>play4()</slot>
+  <slot>play5()</slot>
+  <slot>stop4()</slot>
+  <slot>stop5()</slot>
+  <slot>open4()</slot>
+  <slot>open5()</slot>
+ </slots>
+</ui>
